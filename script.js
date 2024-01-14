@@ -180,8 +180,8 @@ const setPlayerDisplay = () => {
     const songArtist = document.getElementById("player-song-artist");
     const currentTitle = userData?.currentSong?.title;
     const currentArtist = userData?.currentSong?.artist;
-    playingSong.textContent = currentTitle ? currentTitle : "";
-    songArtist.textContent = currentArtist ? currentArtist : "";
+    playingSong.textContent = currentTitle || "";
+    songArtist.textContent = currentArtist || "";
 };
 
 const highlightCurrentSong = () => {
